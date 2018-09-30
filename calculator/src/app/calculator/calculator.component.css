@@ -1,0 +1,10 @@
+@import '../../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.calculator-card {
+    max-width: 400px;
+}
+.result {
+    text-align: right;
+    height: 100px;
+    font-size: 30px;
+}
