@@ -2,9 +2,39 @@
 
 .calculator-card {
     max-width: 400px;
+    border: 2px 2px black;
+}
+mat-grid-tile {
+    background: #402f53fd;
+    border: 2px 2px gray;
+  }
+mat-card {
+    border-radius: 5px;
+    margin: 0; 
+    padding: 5px;
+}
+.grid-header {
+    background-color:  #402f53fd;
+    margin-bottom: -8px;
 }
 .result {
     text-align: right;
     height: 100px;
     font-size: 30px;
+    background: lightgray;
+    border: 2px gray;
+}
+mat-grid-tile-header {
+    font-size: xx-large;
+    border: 2px gray;
+    align-self: auto;
+    background: lightblue;
+}
+.grid-container {
+    background: gray;
+    padding: 15px;
+    border-radius: 5px;
+}
+h2 {
+    margin-left: 28%;
 }
