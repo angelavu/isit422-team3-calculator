@@ -22,7 +22,7 @@ mat-card {
     height: 100px;
     font-size: 30px;
     background: lightgray;
-    border: 2px gray;
+    border: 2px solid #ddd;
 }
 mat-grid-tile-header {
     font-size: xx-large;
@@ -37,4 +37,13 @@ mat-grid-tile-header {
 }
 h2 {
     margin-left: 28%;
+}
+.calcbutton {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+}.right {
+    border-right: 2px solid #ddd;
 }
