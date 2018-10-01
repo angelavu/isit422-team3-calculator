@@ -3,28 +3,28 @@
     <mat-grid-list cols="1" class='grid-header'>
       <h2>Calculator</h2>
     </mat-grid-list>
-    <div class="result">{{result}}</div>
+    <div class="result">{{display}}</div>
     <mat-grid-list cols="2" rowHeight="30px">
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">CLEAR</button></mat-grid-tile>
-      <mat-grid-tile><button color='warn' mat-button (click)="replaceThis()">DEL</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="clear()">CLEAR</button></mat-grid-tile>
+      <mat-grid-tile><button color='warn' mat-button (click)="delete()">DEL</button></mat-grid-tile>
     </mat-grid-list>
     <mat-grid-list cols="4">
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">&#43;</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">&#8722;</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">&#215;</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">&#247;</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">9</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">8</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">7</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">6</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">5</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">4</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">3</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">2</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">1</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">0</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">.</button></mat-grid-tile>
-      <mat-grid-tile><button color='accent' mat-button (click)="replaceThis()">&#61;</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="op('+')">&#43;</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="op('-')">&#8722;</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="op('x')">&#215;</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="op('\/')">&#247;</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="result(9)">9</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="result(8)">8</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="result(7)">7</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="result(6)">6</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="result(5)">5</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="result(4)">4</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="result(3)">3</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="result(2)">2</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="result(1)">1</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="result(0)">0</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="result('.')">.</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button (click)="compute()">&#61;</button></mat-grid-tile>
     </mat-grid-list>
   </div>
 </mat-card>
