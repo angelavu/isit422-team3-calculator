@@ -3,9 +3,7 @@
   <mat-toolbar color="primary">
 
     <!--we can use this to alter the metrics system later-->
-    <mat-menu class='tool-row' x-position="before" #menu="matMenu">
-      <button mat-menu-item><mat-icon>apps</mat-icon>Calculator</button>  
-    </mat-menu>
+      <mat-icon class="tool-row">apps</mat-icon>  
 
     <h1 class='tool-row'>Student Calculator</h1>
 
@@ -17,8 +15,10 @@
     <button mat-menu-item>To be implemented</button>
     <button mat-menu-item>To be implemented</button>
   </mat-menu>
-  <div class='calc'>
+  <div class="bigbox">
+    <div class='calc'>
       <app-calculator></app-calculator>
+    </div>
   </div>
 </div>
 <!-- 
