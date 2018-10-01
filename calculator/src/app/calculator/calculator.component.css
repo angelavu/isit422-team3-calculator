@@ -9,21 +9,27 @@ mat-grid-tile {
     border: 2px solid #ddd;
   }
 mat-card {
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0; 
     padding: 5px;
 }
 .result {
     text-align: right;
-    height: 100px;
+    height: 40px;
     font-size: 30px;
     background: lightgray;
-    border-bottom: 2px solid #ddd;
+    border: 2px solid #ddd;
+}
+.grid-header {
+    display: inline-block;
+    background-color: 402f53fd;
+    width: 50%;
+    margin: auto;
 }
 .grid-container {
     background: rgba(87, 5, 173, 0.992);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 h2 {
     margin: auto;
