@@ -5,8 +5,8 @@
     </mat-grid-list>
     <div class="result">{{display}}</div>
     <mat-grid-list style.border-bottom="1px solid #ddd" cols="4" rowHeight="30px">
-      <mat-grid-tile colspan="2"><button color='accent' mat-button class='calcbutton' (click)="replaceThis()">CLEAR</button></mat-grid-tile>
-      <mat-grid-tile colspan="2"><button color='warn' mat-button class='calcbutton' (click)="replaceThis()">DEL</button></mat-grid-tile>
+      <mat-grid-tile colspan="2"><button color='accent' mat-button class='calcbutton' (click)="clear()">CLEAR</button></mat-grid-tile>
+      <mat-grid-tile colspan="2"><button color='warn' mat-button class='calcbutton' (click)="delete()">DEL</button></mat-grid-tile>
     </mat-grid-list>
     <mat-grid-list cols="4">
       <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="op('+')">&#43;</button></mat-grid-tile>
