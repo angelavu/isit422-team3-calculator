@@ -1,0 +1,34 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div app-box>
+  <mat-toolbar color="primary">
+
+    <!--we can use this to alter the metrics system later-->
+      <mat-icon class="tool-row">apps</mat-icon>  
+
+    <h1 class='tool-row'>Student Calculator</h1>
+
+    <button mat-icon-button [mat-menu-trigger-for]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item>To be implemented</button>
+    <button mat-menu-item>To be implemented</button>
+  </mat-menu>
+  <div class="bigbox">
+    <div class='calc'>
+      <app-calculator></app-calculator>
+    </div>
+  </div>
+</div>
+<!-- 
+Use this for material-buttons!
+
+<mat-card> <== I think this one is optional
+    <button mat-button></button>
+    <button mat-raised-button></button>
+    <button mat-raised-button color="primary"></button>
+    <button mat-raised-button color="accent"></button>
+  </mat-card>
+
+-->

@@ -1,0 +1,30 @@
+<mat-card class="calculator-card">
+  <div class='grid-container'>
+    <mat-grid-list rowHeight="40" cols="1" class='grid-header calcbutton right'>
+      <mat-grid-tile><h5 [style.color]="'white'" >Calculator</h5></mat-grid-tile>    
+    </mat-grid-list>
+    <div class="result">{{display}}</div>
+    <mat-grid-list style.border-bottom="1px solid #ddd" cols="4" rowHeight="30px">
+      <mat-grid-tile colspan="2"><button color='accent' mat-button class='calcbutton' (click)="clear()">CLEAR</button></mat-grid-tile>
+      <mat-grid-tile colspan="2"><button color='warn' mat-button class='calcbutton' (click)="delete()">DEL</button></mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4">
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="op('+')">&#43;</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="op('-')">&#8722;</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="op('x')">&#215;</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="op('\/')">&#247;</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="result(9)">9</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="result(8)">8</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="result(7)">7</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="result(6)">6</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="result(5)">5</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="result(4)">4</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="result(3)">3</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="result(2)">2</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="result(1)">1</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="result(0)">0</button></mat-grid-tile>
+      <mat-grid-tile><button color='accent' mat-button class='calcbutton' (click)="result('.')">.</button></mat-grid-tile>
+      <mat-grid-tile><button height='50px' color='accent' class='calcbutton' mat-button (click)="compute()">&#61;</button></mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</mat-card>

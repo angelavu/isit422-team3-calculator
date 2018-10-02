@@ -1,0 +1,45 @@
+@import '../../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.calculator-card {
+    max-width: 400px;
+    border: 2px 2px black;
+}
+mat-grid-tile {
+    background: #402f53fd;
+    border: 2px solid #ddd;
+  }
+mat-card {
+    border-radius: 10px;
+    margin: 0; 
+    padding: 5px;
+}
+.result {
+    text-align: right;
+    height: 40px;
+    font-size: 30px;
+    background: lightgray;
+    border: 2px solid #ddd;
+}
+.grid-header {
+    display: inline-block;
+    background-color: 402f53fd;
+    width: 50%;
+    margin: auto;
+}
+.grid-container {
+    background: rgba(87, 5, 173, 0.992);
+    padding: 10px;
+    border-radius: 10px;
+}
+h2 {
+    margin: auto;
+}
+.calcbutton {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+}.right {
+    border-right: 2px solid #ddd;
+}
